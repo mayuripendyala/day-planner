@@ -73,7 +73,7 @@ function trackTheTime() {
         var blockTime =parseInt($(this).attr("id").split("hour_")[1]);
         console.log(blockTime);
 
-        if(blockTime == now){
+        if(blockTime === now){
             $(this).siblings('.description').addClass("present");
             $(this).siblings('.description').removeClass("past");
             $(this).siblings('.description').removeClass("future");
